@@ -1,0 +1,23 @@
+.technologiess-section {
+width: 100%;
+height: auto;
+
+&__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+&__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 48px 12px;
+  align-items: center;
+  margin: auto;
+  padding-left: 0;
+  list-style: none;
+}
+&__item {
+  flex-grow: 1;
+}
+}
