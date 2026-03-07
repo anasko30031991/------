@@ -2,7 +2,7 @@
     color: var(--color-dark-blue);
     text-decoration: none;
     transition: 0.3s;
-  }
-  .link:hover {
-    color: var(--color-blue-hover);
+  &:hover {
+        color: var(--color-blue-hover);
+      }
   }

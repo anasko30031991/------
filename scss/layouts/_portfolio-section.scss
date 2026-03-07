@@ -1,0 +1,18 @@
+.portfolio-section {
+    &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+        list-style: none;
+    }
+    &__item {
+        flex-grow: 1;
+    }
+}

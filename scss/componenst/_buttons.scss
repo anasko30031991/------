@@ -1,0 +1,37 @@
+.button {
+display: block;
+align-items: center;
+gap: 10px;
+width: 169px;
+height: 56px;
+background: var(--color-blue);
+color: var(--color-white);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+
+&:hover {
+// background-color: var(--color-blue-hover);
+background-color: transparent;
+}
+}
+.portfolio-button {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+list-style: none;
+
+&__item {
+    background-color: var(--color-dark-light);
+    color: var(--color-blue);
+    height: 48px;
+    border: 1px solid var(--color-blue);
+
+    &:hover {
+    color: var(--color-white);
+    background-color: var(--color-blue-hover);
+}
+}
+}

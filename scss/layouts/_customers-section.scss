@@ -18,7 +18,8 @@ padding: 0;
   list-style: none;
 }
 &__item {
-  flex-grow: 50%;
+  // flex-basis: calc((100% - 16px) / 6);
+   flex-grow: 50%;
 }
 &__img {
   width: 169px;
