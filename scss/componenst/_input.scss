@@ -1,0 +1,40 @@
+.input {
+    position: relative;
+
+&__label {
+  position: absolute;
+  top: -32px;
+  left: 8px;
+}
+&__control {
+  margin-bottom: 44px;
+  padding: 16px 40px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.7;
+  border: 1px solid var(--color-light-grey);
+  border-radius: 8px;
+  background-color: transparent;
+  
+&:focus,
+&:hover {
+  border-color: var(--color-blue-hover);
+  outline: none;
+}
+&--centered {
+  padding: 12px;
+}
+}
+&__icon {
+  position: absolute;
+  top: 16px;
+  left: 8px;
+  fill: var(--color-light-grey);
+
+&:focus,
+&:hover {
+  fill: var(--color-blue-hover);
+  border-color: var(--color-blue-hover);
+}
+}
+}

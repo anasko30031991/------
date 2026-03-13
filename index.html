@@ -33,7 +33,7 @@
         <section class="hero-section">
             <div class="container">
                 <h1 class="hero-section__title">Effective Solutions for Your Business</h1>
-                <button class="hero-section__button button" type="button">Order Services</button>
+                <button class="hero-section__button button modal-btn-open " type="button">Order Services</button>
             </div>
         </section>
         <section class="technologiess-section section">
@@ -306,5 +306,48 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <button class="modal__btn-close modal-btn-close">
+                <svg width="32" height="32">
+                    <use class="modal__icon" href="./images/iconos.svg#icon-close"></use>
+                </svg>
+            </button>
+            <p class="modal__text">Leave your contacts and we will call you back</p>
+            <form name="modal-form" autocomplete="off" novalidate>
+                <div class="modal__form-field input">
+                    <label class="input__label" for="user-name">Name</label>          
+                    <input class="input__control" type="text" id="user-name" name="user-name">
+                    <svg class="input__icon" width="40" height="24"> 
+                        <use href="./images/iconos.svg#icon-name"></use>
+                    </svg>
+                </div>
+                <div class="modal__form-field input">
+                    <label class="input__label" for="user-tel">Tel</label>
+                    <input class="input__control" type="tel" id="user-tel" name="user-tel">
+                    <svg class="input__icon" width="40" height="24"> 
+                        <use href="./images/iconos.svg#icon-tel"></use>
+                    </svg>
+                </div>
+                <div class="modal__form-field input">
+                    <label class="input__label" for="user-email">Email</label>
+                    <input class="input__control" type="email" id="user-email" name="user-email">
+                    <svg class="input__icon" width="40" height="24"> 
+                        <use href="./images/iconos.svg#icon-email"></use>
+                    </svg>
+                </div>
+                <div class="modal__form-field input">
+                    <label class="input__label" for="user-comment">Comment</label>
+                    <textarea class="input__control input__control--centered" id="user-comment" name="user-comment"></textarea>
+                </div>
+                <div class="modal__form-field checkbox">
+                    <label class="checkbox__label" for="terms-conditions">I accept the terms and conditions of the <a href="#">Privacy Policy</a></label>
+                    <input class="checkbox__input" type="checkbox" id="terms-conditions" name="terms-conditions">
+                </div>
+            </form>
+            <button class="modal__button button" type="button">Send</button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

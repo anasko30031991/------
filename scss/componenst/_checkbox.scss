@@ -1,0 +1,12 @@
+.checkbox {
+    position: relative;
+
+&__label {
+    position: absolute;
+    top: 0;
+    left: 24px;
+}
+&__input {
+    position: absolute;
+}
+}

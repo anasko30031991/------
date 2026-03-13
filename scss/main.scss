@@ -7,7 +7,9 @@
   @import './baza';
   // Componenst
   @import './componenst/buttons';
+  @import './componenst/checkbox';
   @import './componenst/footer-form';
+  @import './componenst/input';
   @import './componenst/links';
   @import './componenst/portfolio-card';
   @import './componenst/social';
@@ -19,6 +21,7 @@
   @import './layouts/footer';
   @import './layouts/header';
   @import './layouts/hero-section';
+  @import './layouts/modal';
   @import './layouts/portfolio-section';
   @import './layouts/profile-section';
   @import './layouts/section';
