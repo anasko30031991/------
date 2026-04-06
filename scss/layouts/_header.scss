@@ -3,16 +3,24 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
+    min-height: 80px;
     background-color: var(--color-white);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 8px;
 
   &__container {
+    position: absolute;
+    top: 28px;
+    right: 32px;
+    left: 32px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-height: 80px;
+  @media screen and (min-width: $bp-tablet) {
+    top: 8px;
+  }
   }
   &__nav {
     display: flex;
@@ -24,21 +32,41 @@
     display: block;
   }
   &__menu {
+    display: none;
+@media screen and (min-width: $bp-tablet) {
 display: flex;
 flex-direction: row;
 align-items: center;
 padding: 0px;
 gap: 40px;
 list-style: none;
+}
   }
 &__address {
   flex-grow: 1;
 }
 &__contact {
+  display: none;
+  @media screen and (min-width: $bp-tablet) {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: end;
-  gap: 40px;
+  gap: 16px;
   list-style: none;
+  }
+  @media screen and (min-width: $bp-desktop) { 
+  flex-direction: row;
+  gap: 40px;
+  }
+}
+&__burger {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  @media screen and (min-width: $bp-tablet) {
+    display: none;
+  }
 }
 }

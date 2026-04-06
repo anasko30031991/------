@@ -5,19 +5,30 @@ height: auto;
 &__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: self-end;
 }
 &__list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 48px 12px;
-  align-items: center;
+  gap: 48px ;
+  align-items: flex-start;
   margin: auto;
-  padding-left: 0;
   list-style: none;
+  @media screen and (min-width: $bp-tablet) {
+    padding: 0 84px;
+  }
+  @media screen and (min-width: $bp-desktop) {
+    padding: 0;
+  }
 }
 &__item {
-  flex-grow: 1;
+  flex-basis: 100%;
+  @media screen and (min-width: $bp-tablet) {
+    flex-basis: calc((100% - 72px) / 2);
+  }
+  @media screen and (min-width: $bp-desktop) {
+    flex-basis: calc((100% - 144px) / 4);
+  }
 }
 }

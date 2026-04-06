@@ -1,7 +1,10 @@
 .profile-section {
-width: 100%;
-padding: 16px;
-
+  display: none;
+@media screen and (min-width: $bp-desktop) {
+  display: flex;
+  width: 100%;
+  padding: 16px;
+}
 &__container {
   display: flex;
   flex-direction: column;
@@ -19,7 +22,8 @@ padding: 16px;
   flex-grow: 1; 
 }
 &__img {
-  width: 360px;
+  max-width: 100%;
+  // width: 360px;
   height: 300px;
 }
 }

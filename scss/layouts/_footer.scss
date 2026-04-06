@@ -7,12 +7,23 @@
 
 &__container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
   padding: 60px;
+@media screen and (min-width: $bp-desktop) {
+  flex-direction: row;
+}
+}
+&__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media screen and (min-width: $bp-tablet) {
+    flex-direction: row;
+    flex-basis: 50%;
+  }
 }
 &__outline {
-    flex-basis: 50%;
     color: var(--color-white);
 }
 &__logo {
@@ -21,10 +32,8 @@
 &__text {
   max-width: 252px;
 }
+&__outlint,
 &__contact {
-flex-basis: 50%;
-}
-&__title {
-color: var(--color-white);
+flex-grow: 1;
 }
 }

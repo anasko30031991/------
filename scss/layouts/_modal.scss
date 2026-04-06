@@ -39,12 +39,13 @@
 &__text {
 position: absolute;
 top: 120px;
-left: 240px;
-width: 360px;
-height: 24px;
+left: 80px;
 text-align: center;
 letter-spacing: 0.02em;
 color: var(--color-dark-blue);
+@media screen and (min-width: $bp-tablet) {
+    left: 240px;
+}
 }
 &__form-field {
     position: relative;

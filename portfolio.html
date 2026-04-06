@@ -26,6 +26,49 @@
                         <li><a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                     </ul>
                 </address>
+            <button class="header__burger menu-btn-open" type="button">
+                <svg width="24" height="24">
+                    <use href="./images/iconos.svg#icon-list"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu">
+                <button class="mobile-menu__btn-close menu-btn-close">
+                    <svg width="24" height="24">
+                        <use href="./images/iconos.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu__nav">
+                    <li><a class="mobile-menu__nav-link" href="#">Studio</a></li>
+                    <li><a class="mobile-menu__nav-link" href="#">Portfolio</a></li>
+                    <li><a class="mobile-menu__nav-link" href="#">Contacts</a></li>
+                </ul>
+                    <ul class="mobile-menu__contact">
+                        <li><a class="mobile-menu__contact-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                        <li><a class="mobile-menu__contact-link mobile-menu__contact-link--accent" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    </ul>
+                    <div class="mobile-menu__social social">
+                        <a href="#">
+                            <svg class="social__icon" width="40" height="40">
+                                <use href="./images/iconos.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="social__icon" width="40" height="40">
+                                <use href="./images/iconos.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="social__icon" width="40" height="40">
+                                <use href="./images/iconos.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="social__icon" width="40" height="40">
+                                <use href="./images/iconos.svg#icon-in"></use>
+                            </svg>
+                        </a>    
+                    </div>
+            </div>
             </div>
         </div>
     </header>
@@ -131,6 +174,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__container">
+                <div class="footer__content">
                 <div class="footer__outline">
                     <a class="footer__logo" href="./index.html">
                         <img src="./images/Logo1.svg" alt="Web Studio logo">
@@ -164,6 +208,7 @@
                                 </a>
                                 </div>
                 </div>
+                </div>
                 <div class="footer-form">
                     <h3 class="subtitle subtitle--light">Subscribe</h3>
                     <form action="form" autocomplete="off" novalidate>
@@ -182,4 +227,5 @@
         </div>
     </footer>
 </body>
+<script src="./js/mobile-menu.js"></script>
 </html>
