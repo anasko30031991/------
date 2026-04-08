@@ -17,13 +17,23 @@ background-color: transparent;
 .portfolio-button {
 display: flex;
 flex-direction: row;
-justify-content: center;
+justify-content: flex-start;
 align-items: flex-start;
+flex-wrap: wrap;
 padding: 0px;
-gap: 24px;
+gap: 12px;
 list-style: none;
-
+@media screen and (min-width: $bp-tablet) {
+    max-width: 768px;
+    flex-wrap: nowrap;
+}
 &__item {
+    flex-basis: calc((100% - 48px) / 3);
+@media screen and (min-width: $bp-tablet) {
+    flex-basis: calc((100% - 72px) / 4);
+}
+}
+&__link {
     background-color: var(--color-dark-light);
     color: var(--color-blue);
     height: 48px;
